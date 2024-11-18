@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Student Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #333;
+      margin: 20px;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+    .student {
+      background-color: red;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .student.lightblue {
+      background-color: #00CED1;
+    }
+    .student.green {
+      background-color: green;
+    }
+    .student.glowing {
+      background-color: gold;
+      box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.8);
+      animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px 2px rgba(255, 215, 0, 0.8);
+      }
+      100% {
+        box-shadow: 0 0 15px 5px rgba(255, 215, 0, 1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive Student Dashboard</h1>
+  <div class="dashboard">
+    <div class="student" id="student1" onclick="changeColor(this)">ABDUL HAKEEM A</div>
+    <div class="student" id="student2" onclick="changeColor(this)">ABISHEK K</div>
+    <div class="student" id="student3" onclick="changeColor(this)">ADITYA SRIRAM V</div>
+    <div class="student" id="student4" onclick="changeColor(this)">AJAY T</div>
+    <div class="student" id="student5" onclick="changeColor(this)">AKSHAYA M</div>
+    <div class="student" id="student6" onclick="changeColor(this)">ANUSHIYA J S</div>
+    <div class="student" id="student7" onclick="changeColor(this)">DHARSHINI M</div>
+    <div class="student" id="student8" onclick="changeColor(this)">DINESH KUMAR S</div>
+    <div class="student" id="student9" onclick="changeColor(this)">DIVITH S</div>
+    <div class="student" id="student10" onclick="changeColor(this)">ELAVENIL D</div>
+    <div class="student" id="student11" onclick="changeColor(this)">GOBIKA R</div>
+    <div class="student" id="student12" onclick="changeColor(this)">GOPIKRISHNAN N</div>
+    <div class="student" id="student13" onclick="changeColor(this)">HARI PRASHANNA V</div>
+    <div class="student" id="student14" onclick="changeColor(this)">HARIHARAN R</div>
+    <div class="student" id="student15" onclick="changeColor(this)">HARSHAVARDHAN N</div>
+    <div class="student" id="student16" onclick="changeColor(this)">HARSHINI A</div>
+    <div class="student" id="student17" onclick="changeColor(this)">KANISHKA S</div>
+    <div class="student" id="student18" onclick="changeColor(this)">KAVINDHRA S</div>
+    <div class="student" id="student19" onclick="changeColor(this)">KISHORE C</div>
+    <div class="student" id="student20" onclick="changeColor(this)">MADHUMITHA M</div>
+    <div class="student" id="student21" onclick="changeColor(this)">MAGIZHAN A T</div>
+    <div class="student" id="student22" onclick="changeColor(this)">MAHALAKSHMI J</div>
+    <div class="student" id="student23" onclick="changeColor(this)">MANOJKUMAR S</div>
+    <div class="student" id="student24" onclick="changeColor(this)">MATHI RAMJI K</div>
+    <div class="student" id="student25" onclick="changeColor(this)">MENAKA S</div>
+    <div class="student" id="student26" onclick="changeColor(this)">MITHUN KUMAR M</div>
+    <div class="student" id="student27" onclick="changeColor(this)">MOHAMED FAHIM S</div>
+    <div class="student" id="student28" onclick="changeColor(this)">MOHAMED NOWFEL S A</div>
+    <div class="student" id="student29" onclick="changeColor(this)">MOULIDHARAN P</div>
+    <div class="student" id="student30" onclick="changeColor(this)">NARENKUMAR A</div>
+    <div class="student" id="student31" onclick="changeColor(this)">NIROOPPAN B</div>
+    <div class="student" id="student32" onclick="changeColor(this)">NISHANTHNATESH K</div>
+    <div class="student" id="student33" onclick="changeColor(this)">NITHRA P</div>
+    <div class="student" id="student34" onclick="changeColor(this)">POOBALAN A</div>
+    <div class="student" id="student35" onclick="changeColor(this)">PRAKALYA M</div>
+    <div class="student" id="student36" onclick="changeColor(this)">RAKESH P</div>
+    <div class="student" id="student37" onclick="changeColor(this)">RAKSHA S</div>
+    <div class="student" id="student38" onclick="changeColor(this)">SABARISH M</div>
+    <div class="student" id="student39" onclick="changeColor(this)">SAHAJ S A</div>
+    <div class="student" id="student40" onclick="changeColor(this)">SAMARJITH K</div>
+    <div class="student" id="student41" onclick="changeColor(this)">SAMUEL X</div>
+    <div class="student" id="student42" onclick="changeColor(this)">SAMYUKTHA J M</div>
+    <div class="student" id="student43" onclick="changeColor(this)">SANTHOSH KUMAR P</div>
+    <div class="student" id="student44" onclick="changeColor(this)">SHAMLI R K</div>
+    <div class="student" id="student45" onclick="changeColor(this)">SHARVES KUMAR K</div>
+    <div class="student" id="student46" onclick="changeColor(this)">SHISHIR KUMAR CHAUDHARY</div>
+    <div class="student" id="student47" onclick="changeColor(this)">SHIVA C B</div>
+    <div class="student" id="student48" onclick="changeColor(this)">SHREEVISHNU M</div>
+    <div class="student" id="student49" onclick="changeColor(this)">SIVAGIRI J</div>
+    <div class="student" id="student50" onclick="changeColor(this)">SIVARAMAN M</div>
+    <div class="student" id="student51" onclick="changeColor(this)">SREE CHANDRIGHAA M</div>
+    <div class="student" id="student52" onclick="changeColor(this)">SRI RAM S</div>
+    <div class="student" id="student53" onclick="changeColor(this)">SRINESH M</div>
+    <div class="student" id="student54" onclick="changeColor(this)">SUKESH P</div>
+    <div class="student" id="student55" onclick="changeColor(this)">SURYARAJAN G</div>
+    <div class="student" id="student56" onclick="changeColor(this)">THANUSH P T</div>
+    <div class="student" id="student57" onclick="changeColor(this)">THIRUNAVUKKARASU K</div>
+    <div class="student" id="student58" onclick="changeColor(this)">VAISHNAVI S</div>
+    <div class="student" id="student59" onclick="changeColor(this)">VIBHAGHA P</div>
+    <div class="student" id="student60" onclick="changeColor(this)">VIGNESH K</div>
+    <div class="student" id="student61" onclick="changeColor(this)">VISHNU B K</div>
+    <div class="student" id="student62" onclick="changeColor(this)">VISHNU RAJENDRAN</div>
+  </div>
+
+  <script>
+    // Function to initialize the page with saved colors from localStorage
+    function initializePage() {
+      const students = document.querySelectorAll('.student');
+      students.forEach(student => {
+        const studentId = student.id;
+        const savedColor = localStorage.getItem(studentId);
+        if (savedColor) {
+          student.classList.add(savedColor);
+        }
+      });
+    }
+
+    // Function to handle color changes
+    function changeColor(element) {
+      const studentId = element.id;
+
+      if (element.classList.contains('lightblue')) {
+        // Transition from light blue to green
+        element.classList.remove('lightblue');
+        element.classList.add('green');
+        localStorage.setItem(studentId, 'green');  // Save the new color in localStorage
+      } else if (element.classList.contains('green')) {
+        // Transition from green to glowing
+        element.classList.remove('green');
+        element.classList.add('glowing');
+        localStorage.setItem(studentId, 'glowing');  // Save the new color in localStorage
+      } else if (element.classList.contains('glowing')) {
+        // Transition from glowing to red
+        element.classList.remove('glowing');
+        element.classList.add('red');
+        localStorage.setItem(studentId, 'red');  // Save the new color in localStorage
+      } else {
+        // Transition from red to light blue
+        element.classList.remove('red');
+        element.classList.add('lightblue');
+        localStorage.setItem(studentId, 'lightblue');  // Save the new color in localStorage
+      }
+    }
+
+    // Call initializePage when the page loads
+    window.onload = initializePage;
+  </script>
+</body>
+</html>
